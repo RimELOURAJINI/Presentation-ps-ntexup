@@ -1,0 +1,10 @@
+themeName=classic
+documentColorAccent=1
+themeShowPalette=true
+documentTitle="Smart Cart Project"
+documentSubtitle="Groupe"
+documentAuthor="******** AJOUTER VOS NOMS ICI ********"
+documentDate="2025-12-18"
+
+include("01-styles")
+include("02-pages/index.ntx")

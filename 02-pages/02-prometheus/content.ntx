@@ -1,0 +1,36 @@
+content-slide(title:"Prometheus + Grafana - Strategy") {
+    body {
+        miniPage {
+            ul {
+            text("Monitoring Stack")
+            ul {
+                "Prometheus: Collecte métriques (CPU, RAM, Http Requests)."
+                "Grafana: Visualisation Dashboard."
+                "Persistance: Conservation des séries temporelles."
+                "Sauvegarde: Dashboards Grafana persistants."
+            }
+            }
+        }
+    }
+}
+
+content-slide(title:"Dashboards & Benefits") {
+    body {
+        miniPage {
+            ul {
+            text("Métriques Clés Surveillées")
+            ul {
+                "Utilisation Ressources (CPU/Mem) Pods."
+                "Temps de réponse API (Latence)."
+                "Santé Bases de données."
+                "État Connexions Réseau."
+            }
+            text("Bénéfices")
+            ul {
+                "Détection proactive d'incidents."
+                "Optimisation des coûts via HPA."
+            }
+            }
+        }
+    }
+}

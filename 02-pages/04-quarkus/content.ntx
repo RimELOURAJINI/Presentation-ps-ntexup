@@ -1,0 +1,36 @@
+content-slide(title:"Quarkus - Producer") {
+    body {
+        miniPage {
+            ul {
+            text("Emission des Données (Smart Cart)")
+            text("Topic: cart-telemetry 📊")
+            ul {
+                "Batterie: 85%"
+                "Position: (x:10, y:20, zone:A)"
+                "Charge: 30 kg"
+            }
+            text("Topic: cart-alerts 🚨")
+            ul {
+                "Type: LOW_BATTERY"
+                "Sévérité: CRITICAL"
+                "Message: 'Batterie à 15%'"
+            }
+            }
+        }
+    }
+}
+
+content-slide(title:"Quarkus - Consumers") {
+    body {
+        miniPage {
+            ul {
+            text("Microservices Architecture")
+            ul {
+                "MS1 Analytics 🔵: Calcule stats (Distance, Occupation zones)."
+                "MS2 Prediction 🟢: Prédit pannes (Maintenance prédictive)."
+                "MS3 Notification 🔴: Envoie alertes (Email/SMS sur CRITICAL)."
+            }
+            }
+        }
+    }
+}

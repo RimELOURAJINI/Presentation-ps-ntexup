@@ -1,0 +1,32 @@
+content-slide(title:"Introduction") {
+    body {
+        miniPage {
+            ul {
+            text("Contexte & Objectifs")
+            text("Face aux défis d’optimisation logistique, ce projet propose un prototype simulé de chariots autonomes intelligents sans matériel physique.")
+            text("Il vise à résoudre les problèmes opérationnels des entrepôts :")
+            ul {
+                "Mauvais positionnement d’objets"
+                "Déchets et encombrement"
+                "Inefficacités de recherche et risques de sécurité"
+            }
+            }
+        }
+    }
+}
+
+content-slide(title:"Approche du Projet") {
+    body {
+        miniPage {
+            ul {
+            text("Solution Virtuelle")
+            text("Modélisation d'un environnement virtuel 3D pour tester des algorithmes d’IA et d’optimisation.")
+            text("Valeur Ajoutée")
+            ul {
+                "Réduction des coûts et des risques."
+                "Validation de la solution avant déploiement physique."
+            }
+            }
+        }
+    }
+}

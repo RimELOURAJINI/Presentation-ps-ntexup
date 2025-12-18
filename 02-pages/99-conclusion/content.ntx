@@ -1,0 +1,23 @@
+content-slide(title:"Conclusion") {
+    body {
+        miniPage {
+            ul {
+            text("Bilan du Prototype")
+            text("Le prototype simulé de chariots autonomes démontre une approche stratégique et efficace pour optimiser les entrepôts.")
+            text("Développé en six semaines sans investissement matériel, il valide une architecture complète intégrant émulation réaliste, IA et optimisation.")
+            }
+        }
+    }
+}
+
+content-slide(title:"Perspectives") {
+    body {
+        miniPage {
+            ul {
+            text("Impact & Futur")
+            text("Les résultats simulés confirment d'importants gains de performance et une réduction des risques.")
+            text("Cela offre une base solide pour une future migration vers un déploiement physique et ouvre la voie à une modernisation durable des opérations logistiques.")
+            }
+        }
+    }
+}

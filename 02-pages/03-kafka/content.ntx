@@ -1,0 +1,44 @@
+content-slide(title:"Kafka - Overview") {
+    body {
+        miniPage {
+            ul {
+            text("Distributed Event Streaming")
+            ul {
+                "Plataforme de messagerie distribuée temps réel."
+                "Garantit scalabilité et fiabilité (Producteurs/Consommateurs découplés)."
+            }
+            text("Topics & Architecture")
+            ul {
+                "cart-telemetry (3 partitions): Télémétrie paniers"
+                "cart-alerts (2 partitions): Alertes critiques"
+                "inventory-updates (3 partitions): Mises à jour stock"
+            }
+            text("Reliability")
+            ul {
+                "Partitions: Parallélisme de lecture"
+                "Réplicas: Tolérance aux pannes"
+            }
+            }
+        }
+    }
+}
+
+content-slide(title:"Kafka - Workflow") {
+    body {
+        miniPage {
+            ul {
+            text("1. Production")
+            ul {
+                "Modules (cart, inventory) envoient des events via KafkaTemplate."
+                "Ex: CartTelemetryProducer -> cart-telemetry"
+            }
+            text("2. Stockage & Consommation")
+            ul {
+                "Stockage ordonné par partition."
+                "Consommateurs (Listeners) traitent en parallèle."
+                "Groupes: warehouse-consumer, inventory-processor."
+            }
+            }
+        }
+    }
+}

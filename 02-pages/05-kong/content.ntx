@@ -1,0 +1,43 @@
+content-slide(title:"Kong - API Gateway") {
+    body {
+        miniPage {
+            ul {
+            text("Role & Responsabilités")
+            ul {
+                "Point d'entrée unique (Gateway) pour les microservices."
+                "Sécurité: API Key obligatoire."
+                "Rate Limiting: 100 req/min."
+                "Observabilité: Monitoring Prometheus natif."
+            }
+            text("Flux Architecture")
+            ul {
+                "Client -> API Key -> Kong Proxy -> Quarkus Service"
+                "Pas d'accès direct aux services backend."
+            }
+            }
+        }
+    }
+}
+
+content-slide(title:"Kong - Configuration") {
+    body {
+        miniCode {
+            text("curl -H 'apikey: <key>' http://kong:8000/api/analytics/health")
+        }
+        miniPage {
+            ul {
+            text("Services Exposés")
+            ul {
+                "/api/analytics -> MS Analytics"
+                "/api/prediction -> MS Prediction"
+                "/api/notification -> MS Notification"
+            }
+            text("Déploiement")
+            ul {
+                "Namespace: smart-cart-system"
+                "Updates via kong.yaml"
+            }
+            }
+        }
+    }
+}

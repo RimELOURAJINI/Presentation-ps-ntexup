@@ -1,0 +1,17 @@
+content-slide(title:"Projet Smart Cart") {
+    body {
+        miniPage {
+            ul {
+            text("Réalisé par :")
+            // Empty text or break
+            text("")
+            
+            text("Ahlem Kaabi")
+            text("Mohanned Ben Abdelhafith")
+            text("Rim Elourajini")
+            text("Sarrah Chakroun")
+            text("Yassmin Elayeb")
+            }
+        }
+    }
+}

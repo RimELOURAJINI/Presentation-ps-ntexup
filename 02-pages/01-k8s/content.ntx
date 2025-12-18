@@ -1,0 +1,40 @@
+content-slide(title:"Kubernetes - Architecture") {
+    body {
+        miniPage {
+            ul {
+            text("Infrastructure Robuste")
+            ul {
+                "Isolation: Namespaces, Resource Quotas."
+                "Scaling: HPA (Horizontal Pod Autoscaler) sur CPU/RAM."
+                "Storage: Persistent Volumes pour bases de données."
+            }
+            text("Services K8s")
+            ul {
+                "ClusterIP: Bases de données (Interne)."
+                "NodePort: Accès App externe."
+                "LoadBalancer: Future-ready ingress."
+            }
+            }
+        }
+    }
+}
+
+content-slide(title:"Kubernetes - Validation") {
+    body {
+        miniPage {
+            ul {
+            text("Verification & Health")
+            ul {
+                "Health Checks: Liveness/Readiness probes."
+                "Service Discovery: DNS interne stable."
+                "Resilience: Self-healing pods."
+            }
+             text("Demo Points")
+             ul {
+                "100% Success communication inter-pods."
+                "Modules intégrés au cluster existant."
+             }
+            }
+        }
+    }
+}

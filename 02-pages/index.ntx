@@ -1,0 +1,24 @@
+include("000-team")
+
+content-slide(title:"Plan") {
+    body {
+        ul {
+            "Introduction"
+            "Kafka"
+            "Quarkus"
+            "Kong"
+            "Kubernetes (k8s)"
+            "Prometheus + Grafana"
+            "Conclusion"
+        }
+    }
+}
+
+
+include("00-intro")
+include("03-kafka")
+include("04-quarkus")
+include("05-kong")
+include("01-k8s")
+include("02-prometheus")
+include("99-conclusion")

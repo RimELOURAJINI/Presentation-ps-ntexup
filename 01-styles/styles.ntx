@@ -1,0 +1,20 @@
+// Include standard templates/styles from ntexup-templates
+include(
+    eitherPath(
+        "$HOME/xprojects/nuts-world/nuts-productivity/ntexup-templates/${themeName}/v1.0/theme"
+        "github://thevpc/ntexup-templates/${themeName}/v1.0/theme"
+    )
+)
+
+// Define templates (from ntexup-docs)
+@define miniPage{
+    group(background:white,draw-contour){
+        componentBody
+    }
+}
+
+@define miniCode{
+    group(background:Gray89,draw-contour,margin:5){
+        componentBody
+    }
+}
